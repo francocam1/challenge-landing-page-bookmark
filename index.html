@@ -21,10 +21,10 @@
 
       <nav class="header__nav">
         <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Login</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#faq">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.github.com/francocam1" target="_blank">Login</a></li>
         </ul>
       </nav>
 
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="feature__wrapper">
         <h2 class="feature__title">Features</h2>
         <p class="feature__text">
@@ -58,17 +58,17 @@
           Your bookmarks sync between your devices so you can access them on the go.
         </p>
 
-        <nav class="feature__nav">
+        <nav class="feature__nav nav--active" id="feat-nav">
           <ul>
     
-              <li><a href="">Simple Bookmarking</a></li>
-              <li><a href="">Speedy Searching</a></li>
-              <li><a href="">Easy Sharing</a></li>
+              <li class="nav-list-1 nav--active"><a href="#feat-nav">Simple Bookmarking</a></li>
+              <li class="nav-list-2"><a href="#feat-nav">Speedy Searching</a></li>
+              <li class="nav-list-3"><a href="#feat-nav">Easy Sharing</a></li>
     
           </ul>
         </nav>
 
-        <div class="feature__nav-card card-1">
+        <div class="feature__nav-card card-1 card--active">
 
           <div class="feature__nav-card-art"><img  src="images/illustration-features-tab-1.svg" alt=""></div>
           <h3>Bookmark in one click</h3>
@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
       <div class="faq__wrapper">
         
         <h2>Frequently Asked Questions</h2>
@@ -143,49 +143,83 @@
 
         <nav class="faq__nav">
           <ul>
-            <!-- Question 1 -->
-            <li class="faq__nav-list-question"><p>What is Bookmark?</p> <button><img src="images/icon-arrow.svg" alt=""></button></li>
-            <!-- Answer 1 -->
-            <p class="faq__nav-list-answer">
+            
+            <li class="faq__nav-list-question">
+              <div>
+                <p>What is Bookmark?</p> 
+              
+              <button class="btn-faq">
+                <img src="images/icon-arrow.svg" class="img-btn-faq" alt="">
+              </button>
+              </div>
+            
+            <p class="faq__nav-list-answer" >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
               justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
             </p>
-            <!-- Question 2 -->
-            <li class="faq__nav-list-question"><p>How can I request a new browser?</p><button><img src="images/icon-arrow.svg" alt=""></button></li>
-            <!-- Answer 2 -->
+
+            </li>
+            
+            
+           <li class="faq__nav-list-question">
+            <div>
+              <p>How can I request a new browser?</p>
+              <button class="btn-faq">
+                <img src="images/icon-arrow.svg" alt="">
+              </button>
+            </div>
+            
             <p class="faq__nav-list-answer">
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
               Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
               ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
               Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
             </p>
-            <!-- Question 3 -->
-            <li class="faq__nav-list-question"><p>Is there a mobile app?</p><button><img src="images/icon-arrow.svg" alt=""></button></li>
-            <!-- Answer 3 -->
+            </li>
+            
+             <li class="faq__nav-list-question">
+              <div>
+                <p>Is there a mobile app?</p>
+                <button class="btn-faq">
+                  <img src="images/icon-arrow.svg" alt="">
+                </button>
+              </div>
+            
             <p class="faq__nav-list-answer">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
               urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
               sollicitudin ex et ultricies bibendum.
             </p>
-            <!-- Question 4 -->
-            <li class="faq__nav-list-question"><p>What about other Chromium browsers?</p><button><img src="images/icon-arrow.svg" alt=""></button></li>
-            <!-- Answer 4 -->
-            <p class="faq__nav-list-answer">
+            </li>
+            
+            <li class="faq__nav-list-question">
+              <div>
+                <p>What about other Chromium browsers?</p>
+                <button class="btn-faq">
+                  <img src="images/icon-arrow.svg" alt="">
+                </button>
+              </div>
+            
+             <p class="faq__nav-list-answer">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
               vitae neque eget nisl gravida pellentesque non ut velit.
             </p>
+            </li>
+             
           </ul>
         </nav>
         <button class="faq__btn-info">More Info</button>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__wrapper">
         <p>35,000+ already joined</p>
         <h3>Stay up-to-date with what we’re doing</h3>
-        <input type="email" name="" id="" placeholder="Enter your email addres">
-        <button>Contact Us</button>
+        <div class="contact-btn">
+          <input type="email" name="" id="" placeholder="Enter your email addres">
+          <button>Contact Us</button>
+        </div>
       </div>
     </section>
   </main>
@@ -200,9 +234,9 @@
 
       <nav class="footer__nav">
         <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#faq">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
